@@ -1,6 +1,10 @@
 <?php
-define('SMTP_HOST', 'smtp.example.com');
-define('SMTP_PORT', 587);
-define('SMTP_USERNAME', 'your_email@example.com');
-define('SMTP_PASSWORD', 'your_app_password');
-define('SMTP_FROM_EMAIL', 'your_email@example.com');
+return [
+    'host'       => 'smtp.example.com',
+    'port'       => 587,
+    'username'   => 'your_email@example.com',
+    'password'   => 'your_app_password',
+    'from_email' => 'your_email@example.com',
+    'from_name'  => 'Your Name',
+    'to_email'   => 'destination@example.com',
+];
