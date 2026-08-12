@@ -1,7 +1,3 @@
-<?php
-// header.php — inclus en haut de chaque page
-$page = basename($_SERVER['PHP_SELF']);
-?>
 <header id="home" class="hero-section d-flex align-items-center">
   <div class="container px-4 px-lg-5">
     <div class="row align-items-center gy-5">
@@ -13,9 +9,9 @@ $page = basename($_SERVER['PHP_SELF']);
         <div class="d-flex gap-3 mb-4">
           <a href="https://www.instagram.com/bouba.03?igsh=M3hhOXV0aDZjOHJi&utm_source=qr" class="social-icon d-flex align-items-center justify-content-center rounded-circle">
             <i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-icon d-flex align-items-center justify-content-center rounded-circle">
+            <a href="https://www.linkedin.com/in/bouba-diallo-1a2813398" class="social-icon d-flex align-items-center justify-content-center rounded-circle">
               <i class="fa-brands fa-linkedin-in"></i> </a>
-               <a href="#" class="social-icon d-flex align-items-center justify-content-center rounded-circle">
+                <a href="https://github.com/BOUBA032" class="social-icon d-flex align-items-center justify-content-center rounded-circle">
               <i class="fa-brands fa-github"></i></a>
         </div>
       
@@ -195,13 +191,13 @@ Cette double casquette change ma façon de coder : je n'écris pas juste du PHP 
 </section>
 
 <section id="portfolio" class="section-block">
-  <div class="container px-4 px-lg-5">
+  <div class="container px-4 px-lg-5 justify-content-center">
     <div class="text-center mb-5">
       <p class="eyebrow mb-2">Projets</p>
       <h2 class="fw-bold display-6">Portfolio</h2>
     </div>
 
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-4">
         <div class="portfolio-card rounded-4 overflow-hidden">
           <img src="includes/Gestion.png"  class="img-fluid w-100">
@@ -214,9 +210,9 @@ Cette double casquette change ma façon de coder : je n'écris pas juste du PHP 
 
       <div class="col-md-6 col-lg-4">
         <div class="portfolio-card rounded-4 overflow-hidden">
-          <img src="project3.jpg" alt="Projet 3" class="img-fluid w-100">
+          <img src="includes/AMD Distribution .png"  class="img-fluid w-100">
           <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center">
-            <h5 class="fw-semibold mb-1">Stock Management</h5>
+            <h5 class="fw-semibold mb-1">Boutique En Ligne</h5>
             <p class="text-secondary small mb-0">Full Stack App</p>
           </div>
         </div>
