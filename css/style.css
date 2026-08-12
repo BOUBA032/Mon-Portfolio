@@ -1,0 +1,227 @@
+:root {
+  --bg-black: #0a0a0a;
+  --bg-black-soft: #120707;
+  --red: #e5253b;
+  --red-glow: #ff2d3f;
+  --text-secondary: #b3b3b3;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: #ffffff;
+}
+
+
+.navbar {
+  background-color: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(6px);
+}
+
+.navbar .nav-link {
+  color: #e6e6e6;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--red) !important;
+}
+
+
+.hero-section {
+  min-height: 90vh;
+  background: radial-gradient(circle at 75% 50%, rgba(229, 37, 59, 0.15), transparent 60%),
+              var(--bg-black);
+}
+
+.text-danger { color: var(--red) !important; }
+
+.btn-danger {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.btn-danger:hover {
+  background-color: #c81f33;
+  border-color: #c81f33;
+}
+
+.btn-outline-danger {
+  color: var(--red);
+  border-color: var(--red);
+}
+.btn-outline-danger:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  color: var(--red);
+  font-size: 18px;
+  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+}
+.social-icon:hover {
+  background-color: var(--red);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+.avatar-wrapper {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  padding: 6px;
+  background: radial-gradient(circle, rgba(229,37,59,0.6), rgba(229,37,59,0) 70%);
+  box-shadow: 0 0 60px 10px rgba(229, 37, 59, 0.45);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--red);
+}
+
+@media (max-width: 991px) {
+  .avatar-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+  .hero-section {
+    text-align: center;
+  }
+}
+.section-block{  
+  padding: 6rem 0; 
+}
+
+.bg-black-soft {
+  background-color: var(--bg-black-soft);
+}
+ 
+.eyebrow {
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: .85rem;
+}
+ 
+
+.about-img-wrapper img {
+  border: 3px solid var(--red);
+  box-shadow: 0 0 40px rgba(229, 37, 59, 0.35);
+  height: 100%;
+  
+}
+.img-fluid rounded-4 about-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border: 3px solid var(--red);
+box-shadow: 0 0 40px rgba(229, 37, 59, 0.35);
+}
+ 
+
+.skill-card {
+  background-color: #141010;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform .25s ease, border-color .25s ease;
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--red);
+}
+.skill-icon {
+  font-size: 2.2rem;
+  color: var(--red);
+}
+.skill-line {
+  height: 3px;
+  width: 60%;
+  margin-inline: auto;
+  background: linear-gradient(90deg, var(--red), transparent);
+  border-radius: 2px;
+}
+ 
+
+.service-card {
+  background-color: #141010;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform .25s ease, border-color .25s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--red);
+}
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(229, 37, 59, 0.12);
+  color: var(--red);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+
+.portfolio-card {
+  position: relative;
+  background-color: #141010;
+}
+.portfolio-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.95), rgba(10,10,10,0.2));
+  opacity: 0;
+  transition: opacity .3s ease;
+  text-align: center;
+  padding: 1rem;
+}
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+ 
+
+#contact .form-label {
+  color: #cccccc;
+  font-weight: 500;
+}
+#contact .form-control {
+  background-color: #141010;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+#contact .form-control:focus {
+  background-color: #141010;
+  border-color: var(--red);
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(229, 37, 59, 0.25);
+}
+#contact .form-control::placeholder {
+  color: #777;
+}
+ 
+
+footer {
+  background-color: var(--bg-black);
+}
+ 
