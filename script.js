@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Smooth scroll + fermeture du menu mobile au clic sur un lien
+
   document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
     link.addEventListener('click', () => {
       const menu = document.getElementById('navMenu');
